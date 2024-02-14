@@ -4,4 +4,6 @@ export type BagContextType = {
   setRewardPtG: Function;
   rewardPtG: number;
   qrScanData: string;
+  createBag: Function;
+  bagGen: string;
 };

@@ -14,20 +14,8 @@ const Home = ({navigation}: any) => {
     <SafeAreaView style={styles.supremeWrapper}>
       <View style={styles.navigationNT}>
         <Text style={styles.welcmText}>Hello, Rager</Text>
-        <TouchableOpacity
-          activeOpacity={1}
-          style={styles.settings}
-          onPress={() => Alert.alert('Open Setting')}>
-          <Image source={require('../../../assets/settings.png')} />
-        </TouchableOpacity>
       </View>
       <View style={styles.mContent}>
-        <TouchableOpacity
-          onPress={() => {
-            navigation.navigate('CreateBag');
-          }}>
-          <Text style={styles.Link}>Create Bag</Text>
-        </TouchableOpacity>
         <TouchableOpacity
           onPress={() => {
             navigation.navigate('Qr');

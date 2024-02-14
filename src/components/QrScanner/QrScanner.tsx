@@ -16,7 +16,7 @@ const QrScanner = ({navigation}: any) => {
           }}
           flashMode={RNCamera.Constants.FlashMode.auto}
           reactivate={true}
-          reactivateTimeout={100}
+          reactivateTimeout={10000}
           showMarker={true}
         />
       </View>

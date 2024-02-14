@@ -14,13 +14,13 @@ import Config from 'react-native-config';
 
 import {Alert, NativeEventEmitter, NativeModules} from 'react-native';
 import Snackbar from 'react-native-snackbar';
+import {BURL} from '../../secrets';
 
 export const OrderContext = createContext<OrderContextType | undefined>(
   undefined,
 );
-const BURL: string = Config.BURL!;
 const Axios = axios.create({
-  baseURL: `http://192.168.1.104:5000/api/orders`,
+  baseURL: `${BURL}/api/orders`,
   responseType: 'json',
 });
 
